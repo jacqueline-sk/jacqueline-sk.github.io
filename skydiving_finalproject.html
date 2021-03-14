@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skydiving</title>
+    <style>
+      body {
+        background: linear-gradient(#6e9ff7, #93bfff, #d5eafe);
+      }
+      img {
+        width: 100%;
+        border-radius: 3px;
+      }
+      h2 {
+        font-weight: 400;
+        padding: 15px 0;
+      }
+      div {
+        background: #eaf6f6;
+        margin: 0 auto;
+        padding: 30px;
+        border-radius: 3px;
+        display: block;
+        text-align: center;
+        width: 75%;
+        font-family: system-ui;
+        color: #3e3245;
+        line-height: 25px;
+      }
+      span {
+        font-style: italic;
+        font-weight: 450;
+      }
+      ul {
+        list-style: none;
+        padding: 30px 0;
+      }
+
+      .contact {
+        font-family: system-ui;
+        font-size: 13px;
+        color: #3e3245;
+        background: #d5eafe;
+        transition: all 200ms ease;
+        border-radius: 3px;
+        border: hidden;
+        box-shadow: 1px 3px 2px grey;
+        padding: 6px;
+      }
+
+      button:hover {
+        color: #fff;
+        background: #93bfff;
+        color: #3e3245;
+      }
+
+      .footer {
+        text-align: center;
+        font-family: monospace;
+        font-size: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      src="https://fh-sites.imgix.net/sites/2573/2019/05/06143504/hero-slider-041.jpg?auto=compress%2Cformat&w=1000&h=1000&fit=max"
+      alt="skydive abel taz"
+    />
+
+    <div>
+      <h1>Falling from the sky</h1>
+
+      <h2>
+        <em>Why near-death experiences like Skydiving are so much fun</em>
+      </h2>
+      <p>
+        Have you ever wondered what it must be like to see the mountains from a
+        bird's view? Or the lakes? The ocean? Why not partner up with an
+        experienced Skydiver and take off? <br /><br />
+        First of all, let's clarify what Skydiving actually is:
+        <span
+          >Parachuting (or Skydiving) is a method of transiting from a high
+          point to Earth with the aid of gravity, involving the control of speed
+          during the descent using a parachute or parachutes. It may involve
+          more or less free-falling (the skydiving segment) which is a period
+          when the parachute has not yet been deployed and the body gradually
+          accelerates to terminal velocity.</span
+        >
+        So much for Wikipedia's explanation. Basically, you'll experience three
+        key phases of your jump:
+      </p>
+      <ul>
+        <li>
+          <strong>getting on the plane and taking off 🛫</strong>
+          <p>
+            First of all, you will meet your partner. They will make sure you're
+            all geared up and will be your best friend for the next hour or so.
+            Once your harness and other security gear are ready to go, it's time
+            to get on the plane! Depending on the height you chose for your
+            jump, the flight usually takes 15-30 minutes. Enjoy the scenery!
+            Your guide is now double-checking the harness and ensures that you
+            are very closely strapped to them (get ready to feel their ribs!).
+            Once they give you the signal to get ready, just lean your head and
+            legs back and <span>... enjoy the thrill!</span>
+          </p>
+        </li>
+        <li>
+          <strong>jump & fall ✌🏽</strong>
+          <p>
+            When you're doing your very first skydive, the feeling is just
+            indescribable - literally! Your brain has no scenario to compare
+            this to, so you literally do. not. know. what to expect and what to
+            do. Your survival instincts are deactivated. There's nothing else
+            for you to do than look up and around and enjoy the scenery. In this
+            phase, you're truly falling and rushing from the sky for about 30-60
+            seconds. (Author's note: My first guide explained to me that in this
+            phase, g forces are somehow irrelevant, so you won't feel nauseous)
+            At some point, your guide will pull the trigger and open the
+            parachute.
+          </p>
+        </li>
+        <li>
+          <strong>float & land 🪂</strong>
+          <p>
+            Now here comes the relaxing part! Once the parachute opened up,
+            you're slowly gliding towards the earth. It's time to take off your
+            security goggles and ear-protection. It will take a few minutes
+            until you're touching ground, so your guide will likely explain a
+            bit about the area and might perform a few spins and tricks. Now
+            this is where you'll need a strong stomach! Unfortunately, even the
+            most exciting Skydives have to come to an end, so listen to your
+            guide's instructions for the landing. Made it safely back to earth?
+            Congrats! How do you feel? <br /><span
+              >... Do you want to go again?</span
+            >
+          </p>
+        </li>
+      </ul>
+      <p>
+        Are you interested in finding Skydiving locations around you?
+        <br />Visit
+        <a href="https://www.dropzone.com/dropzones/" target="_blank"
+          >Dropzones</a
+        >
+        to find your next adventure! <br /><br />Do you have any questions?
+        <br />
+        <button class="contact">Drop me a message!</button>
+      </p>
+    </div>
+    <hr />
+    <p class="footer">created by Jacqueline Sukop</p>
+  </body>
+  <script>
+    function runContact() {
+      let name = prompt(`What's your name?`);
+      let msg = prompt(`Hi ${name}, what do you want to tell me?`);
+      let skydive = prompt(`${name}, have you done a Skydive before?`);
+      skydive.toLowerCase();
+      skydive = skydive.toLowerCase();
+
+      if (skydive === "yes") {
+        alert(`Yay, you're part of the club!`);
+      } else {
+        alert(`Maybe we found your next adventure!`);
+      }
+    }
+
+    let contact = document.querySelector("button");
+    contact.addEventListener("click", runContact);
+  </script>
+</html>
